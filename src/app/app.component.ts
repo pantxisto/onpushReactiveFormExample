@@ -14,8 +14,8 @@ export class AppComponent {
   constructor() {
     this.$userForm = new BehaviorSubject<FormGroup>(
       new FormGroup({
-        name: new FormControl('', Validators.required),
-        lastName: new FormControl('', Validators.required),
+        name: new FormControl('Nombre', Validators.required),
+        lastName: new FormControl('Apellido', Validators.required),
       })
     );
   }
