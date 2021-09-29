@@ -20,18 +20,10 @@ export class AppComponent {
     );
   }
 
-  // userForm: FormGroup;
-
-  // constructor() {
-  //   this.userForm = new FormGroup({
-  //     name: new FormControl('', Validators.required),
-  //     lastName: new FormControl('', Validators.required),
-  //   });
-  // }
-
   changeForm() {
     setTimeout(() => {
       this.updateForm();
+      // COMMENT senForm to see the bug
       this.sendForm();
     }, 1000);
   }
